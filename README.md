@@ -50,7 +50,9 @@ python -m segmentation.train --config=configs/unet.yaml --project_path=outputs
 ```
 
 where
-- `--config` is the path to experiment config in configs/
+- `--config` is the path to experiment config in configs/ 
+
+!NOTE: (models available: UNetCustom - unet from scratch; SMP - any architecture + encoder supported in [segmentation models pytorch](https://github.com/qubvel/segmentation_models.pytorch))
 - `--project_path` is the path for storing project artifacts (models, logs, checkpoints, visualizations, metrics, etc.)
 
 As a result, torch model is saved and converted in formats for inference:`.pt`, `.pth`, `.onnx`.
