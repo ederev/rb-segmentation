@@ -95,6 +95,7 @@ To run the example in a machine running Docker and docker compose, run:
 
 The FastAPI app will be available at http://localhost:8000, and the Streamlit UI at http://localhost:8501.
 
+App demo screen:
 ![app](./images/app.png)
 
 For Documentation of FastAPI visit http://localhost:8000/docs.
