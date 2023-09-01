@@ -1,0 +1,6 @@
+name: .venv
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - pip -r requirements.txt

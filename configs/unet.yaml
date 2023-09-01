@@ -1,0 +1,27 @@
+data:
+  dataset: "lyft"
+  source: https://www.kaggle.com/datasets/kumaresanmanickavelu/lyft-udacity-challenge
+  data_path: ./data
+
+data_loader:
+  batch_size: 8
+  num_workers: 4
+  image_size:
+    height: 512
+    width: 512
+
+model:
+  arch_name: UNet
+  encoder_name: timm-mobilenetv3_large_100
+  encoder_weights: "imagenet"
+  num_classes: 13
+
+optimizer:
+  lr: 1.e-04
+
+trainer:
+  num_epochs: 20
+  devices: auto
+  accelerator: auto
+
+
